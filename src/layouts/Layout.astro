@@ -12,16 +12,11 @@ export interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
-
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? `${title} | Healix`
+  : "Healix";
 ---
 
 <!DOCTYPE html>
@@ -47,10 +42,6 @@ const makeTitle = title
           url: canonicalURL,
           type: "website",
           title: `Healix - Private and Affordable Care`,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: "Astroship Homepage Screenshot",
         },
       }}
     />

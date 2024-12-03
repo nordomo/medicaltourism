@@ -6,7 +6,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nordomo.github.io/medicaltourism", // Full URL of your GitHub Pages site
+  site: "https://nordomo.github.io", // Full URL of your GitHub Pages site
   base: "/medicaltourism/", // Repository name as the base path
   integrations: [tailwind(), mdx(), sitemap(), icon()],
 });

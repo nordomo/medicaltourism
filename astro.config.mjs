@@ -6,7 +6,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nordomo.github.io", // Full URL of your GitHub Pages site
-  base: "/medicaltourism/", // Repository name as the base path
+  site: "https://lively-fenglisu-27e23f.netlify.app", // Use your Netlify site URL or leave blank if unknown
   integrations: [tailwind(), mdx(), sitemap(), icon()],
 });

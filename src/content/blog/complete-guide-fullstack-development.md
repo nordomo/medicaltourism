@@ -3,7 +3,7 @@ draft: false
 title: "An experience beyond expectations!"
 snippet: "Maria praised Healix for seamless arrangements, excellent hospital care, a relaxing Sapanca hotel stay, and an unforgettable Istanbul tour."
 image: {
-    src: "/src/assets/german.jpg",
+    src: "/public/german.jpg",
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"

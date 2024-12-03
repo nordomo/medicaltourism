@@ -18,6 +18,7 @@ const menuitems = [
   {
     title: "Our Prices",
     path: "/pricing",
+    badge: "New", // Add a badge property here
   },
   {
     title: "Our Hospitals",
@@ -26,6 +27,7 @@ const menuitems = [
   {
     title: "Patient Stories",
     path: "/blog",
+    badge: "Updated", // Add a badge property here
   },
   {
     title: "Contact Us!",
@@ -38,10 +40,9 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Heal</span><span
-            class="text-slate-500">ix</span
-          >
+        <!-- Replace text with logo -->
+        <a href="/" class="flex items-center">
+          <img src="/assets/Healix.png" alt="Healix Logo" class="h-12 w-auto" />
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />

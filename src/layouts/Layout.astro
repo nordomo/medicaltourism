@@ -12,6 +12,11 @@ export interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
 const { title } = Astro.props;
 
 const makeTitle = title
@@ -42,6 +47,10 @@ const makeTitle = title
           url: canonicalURL,
           type: "website",
           title: `Healix - Private and Affordable Care`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Astroship Homepage Screenshot",
         },
       }}
     />

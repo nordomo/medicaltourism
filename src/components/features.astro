@@ -2,67 +2,76 @@
 // @ts-ignore
 import { Icon } from "astro-icon/components";
 
-const features = [
+const events = [
   {
-    title: "Everything You Need for a Premium Medical Journey",
+    title: "Online Blind Speed Dating",
     description:
-      "We offer a comprehensive experience, ensuring your journey to health and wellness is seamless, luxurious, and stress-free.",
-    icon: "bx:bxs-briefcase",
+      "Join a fun and engaging online speed dating session where you'll connect with like-minded individuals in a blind format.",
+    date: "Jan 20, 2025",
+    time: "7:00 PM",
+    icon: "mdi:chat-outline",
   },
   {
-    title: "World-Class Private Hospitals",
+    title: "Café Blind Date Night",
     description:
-      "Receive treatment from top-rated private hospitals in Turkey, known for their cutting-edge technology and expert medical staff.",
-    icon: "bx:bxs-window-alt",
+      "An offline speed dating event at a cozy café in Rotterdam. Enjoy the excitement of meeting people without profiles.",
+    date: "Jan 25, 2025",
+    time: "6:30 PM",
+    icon: "mdi:coffee",
   },
   {
-    title: "Personalized Care",
+    title: "Game Night: Blind Match Edition",
     description:
-      "From the initial consultation to post-treatment support, we provide personalized care tailored to your needs.",
-    icon: "bx:bxs-data",
+      "A fun-filled evening of games and blind connections. Perfect for breaking the ice and making new friends.",
+    date: "Feb 5, 2025",
+    time: "8:00 PM",
+    icon: "mdi:gamepad-variant-outline",
   },
   {
-    title: "Luxurious Accommodations",
+    title: "Singles Dinner Mixer",
     description:
-      "Enjoy your stay at a 5-star hotel with spa amenities surrounded by the serene nature of Sapanca.",
-    icon: "bx:bxs-bot",
+      "A blind dinner mixer for singles in Rotterdam. Share a meal, have a chat, and see where the night takes you.",
+    date: "Feb 14, 2025",
+    time: "7:00 PM",
+    icon: "mdi:silverware-fork-knife",
   },
   {
-    title: "Explore Istanbul",
+    title: "Blind Walking Tour",
     description:
-      "Take a guided tour of Istanbul’s iconic landmarks, blending your treatment journey with cultural enrichment.",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Dedicated Support",
-    description:
-      "Our team is available 24/7 to ensure every aspect of your trip is handled with care and professionalism.",
-    icon: "bx:bxs-user",
+      "Explore the city of Rotterdam with a group of new friends. Every step is an opportunity to connect.",
+    date: "Mar 1, 2025",
+    time: "4:00 PM",
+    icon: "mdi:walk",
   },
 ];
+
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Redefining Medical Tourism with Luxury and Care
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Discover a new standard in health and wellness: world-class treatments, bespoke services, 5-star indulgence, and unforgettable experiences — all seamlessly curated for you.
-  </p>
-</div>
-
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>
+<section class="w-full py-12 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      Upcoming Events
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      Explore our curated events designed to help you connect, whether online or offline. Find your next adventure in Rotterdam!
+    </p>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+      {
+        events.map((event) => (
+          <div class="flex gap-4 items-start">
+            <div class="mt-1 bg-blue-500 rounded-full p-2 w-8 h-8 shrink-0">
+              <Icon class="text-white" name={event.icon} />
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">{event.title}</h3>
+              <p class="text-slate-500 mt-2 leading-relaxed">{event.description}</p>
+              <p class="text-slate-400 mt-1 text-sm">
+                {event.date} | {event.time}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

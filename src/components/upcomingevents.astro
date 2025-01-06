@@ -1,5 +1,5 @@
 ---
-// @ts-ignore
+import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 
 const events = [
@@ -9,7 +9,7 @@ const events = [
       "Join a fun and engaging online speed dating session where you'll connect with like-minded individuals in a blind format.",
     date: "Jan 20, 2025",
     time: "7:00 PM",
-    icon: "mdi:chat-outline",
+    icon: "src:chat-outline",
   },
   {
     title: "Café Blind Date Night",
@@ -17,7 +17,7 @@ const events = [
       "An offline speed dating event at a cozy café in Rotterdam. Enjoy the excitement of meeting people without profiles.",
     date: "Jan 25, 2025",
     time: "6:30 PM",
-    icon: "mdi:coffee",
+    icon: "src:coffee",
   },
   {
     title: "Game Night: Blind Match Edition",
@@ -25,23 +25,7 @@ const events = [
       "A fun-filled evening of games and blind connections. Perfect for breaking the ice and making new friends.",
     date: "Feb 5, 2025",
     time: "8:00 PM",
-    icon: "mdi:gamepad-variant-outline",
-  },
-  {
-    title: "Singles Dinner Mixer",
-    description:
-      "A blind dinner mixer for singles in Rotterdam. Share a meal, have a chat, and see where the night takes you.",
-    date: "Feb 14, 2025",
-    time: "7:00 PM",
-    icon: "mdi:silverware-fork-knife",
-  },
-  {
-    title: "Blind Walking Tour",
-    description:
-      "Explore the city of Rotterdam with a group of new friends. Every step is an opportunity to connect.",
-    date: "Mar 1, 2025",
-    time: "4:00 PM",
-    icon: "mdi:walk",
+    icon: "src:gamepad-outline",
   },
 ];
 
